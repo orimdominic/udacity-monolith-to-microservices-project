@@ -7,6 +7,11 @@ const credentials = new AWS.SharedIniFileCredentials({
 });
 AWS.config.credentials = credentials;
 console.log(credentials);
+console.log(
+  'username:', config.username,
+  'password:',config.password,
+  'database:',config.database
+);
 
 export const s3 = new AWS.S3({
   signatureVersion: "v4",
