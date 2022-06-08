@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  AWS_BUCKET: _insert_value_here_
+  AWS_PROFILE: _insert_value_here_
+  AWS_REGION: _insert_value_here_
+  JWT_SECRET: _insert_value_here_
+  POSTGRES_DB: _insert_value_here_
+  POSTGRES_HOST: _insert_value_here_
+  URL: _insert_value_here_
+metadata:
+  name: env-config
