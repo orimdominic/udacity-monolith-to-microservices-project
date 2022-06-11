@@ -18,12 +18,12 @@ before_script:
 script:
   - docker tag udagram-api-feed orimdominic/udagram-api-feed:v1
   - docker tag udagram-api-user orimdominic/udagram-api-user:v1
-  - docker tag udagram-frontend orimdominic/udagram-frontend:v6
+  - docker tag udagram-frontend orimdominic/udagram-frontend:v7
   - docker tag udagram-reverseproxy orimdominic/udagram-reverseproxy:v1
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker push orimdominic/udagram-api-feed:v1
   - docker push orimdominic/udagram-api-user:v1
-  - docker push orimdominic/udagram-frontend:v6
+  - docker push orimdominic/udagram-frontend:v7
   - docker push orimdominic/udagram-reverseproxy:v1
