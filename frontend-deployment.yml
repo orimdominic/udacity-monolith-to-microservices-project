@@ -15,7 +15,7 @@ spec:
         service: frontend
     spec:
       containers:
-      - image: orimdominic/udagram-frontend:v5
+      - image: username/udagram-frontend:v6
         name: frontend
         imagePullPolicy: Always
         env:
